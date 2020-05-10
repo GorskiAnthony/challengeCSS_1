@@ -1,16 +1,16 @@
-/* main color */
+/* global color */
 :root {
     --red: hsl(0, 78%, 62%);
     --cyan: hsl(180, 62%, 55%);
     --orange: hsl(34, 97%, 64%);
     --blue: hsl(212, 86%, 64%);
 
-    /* global */
     --very-dark-blue: hsl(234, 12%, 34%);
     --grayish-blue: hsl(229, 6%, 66%);
     --very-light-gray: hsl(0, 0%, 98%);
 }
 
+/* global */
 body {
     display: flex;
     background-color: var(--very-light-gray);
@@ -22,8 +22,7 @@ body {
     font-size: 1em;
 }
 
-/* Cards */
-
+/* Header */
 .header {
     text-align: center;
 }
@@ -48,24 +47,14 @@ body {
     color: var(--grayish-blue)
 }
 
+/* Container */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-img {
-    padding-top: 1em;
-    display: block;
-    margin-left: auto;
-    margin-right: 0; 
-}
-
-.title {
-    font-weight: 600;
-    color: var(--very-dark-blue);
-}
-
+/* Card and information */
 .card {
     border-radius: 5px;
     background-color: var(--very-light-gray);
@@ -75,10 +64,25 @@ img {
     box-shadow: 6px 6px 9px var(--grayish-blue);
 }
 
+/* Title card */
+.title {
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+/* Detail card */
 .details {
     font-weight: 200;
     padding-top: 1em;
     color: var(--grayish-blue)
+}
+
+/* All img */
+img {
+    padding-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: 0; 
 }
 
 /* Color top border */
@@ -105,13 +109,14 @@ img {
     }
 }
 
+/* Media style between 1439 to 1024px */
 @media only screen and (max-width: 1439px) and (min-width: 1024px) {
     .container {
         width: 60em;
     }
 }
 
-
+/* Media style under 1023 px */
 @media only screen and (max-width: 1023px)  {
 
     .base-line {
