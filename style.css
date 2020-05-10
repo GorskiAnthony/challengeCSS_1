@@ -1,0 +1,125 @@
+/* main color */
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* global */
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    display: flex;
+    background-color: var(--very-light-gray);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+/* Cards */
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-weight: 200;
+    margin-bottom: 0px;
+    color: var(--grayish-blue)
+}
+
+.header p {
+    margin-top: 0px;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+.base-line {
+    width: 35em;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 2em;
+    color: var(--grayish-blue)
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    padding-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: 0; 
+}
+
+.title {
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+.card {
+    border-radius: 5px;
+    background-color: var(--very-light-gray);
+    margin: 1em 1em;
+    padding: 2em;
+    flex: 1 1 33%;
+    box-shadow: 6px 6px 9px var(--grayish-blue);
+}
+
+.details {
+    font-weight: 200;
+    padding-top: 1em;
+    color: var(--grayish-blue)
+}
+
+/* Color top border */
+.blue {
+    border-top: solid var(--blue);
+}
+
+.red {
+    border-top: solid var(--red);
+}
+
+.cyan {
+    border-top: solid var(--cyan);
+}
+
+.orange {
+    border-top: solid var(--orange);
+}
+
+/* Media over 1440px */
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 75em;
+    }
+}
+
+@media only screen and (max-width: 1439px) and (min-width: 1024px) {
+    .container {
+        width: 60em;
+    }
+}
+
+
+@media only screen and (max-width: 1023px)  {
+
+    .base-line {
+        width: 20em;
+    }
+
+    .container {
+        width: 20em;
+        flex-wrap: wrap;
+    }
+}
