@@ -33,7 +33,7 @@ body {
     color: var(--grayish-blue)
 }
 
-.header p {
+.header div {
     margin-top: 0px;
     font-weight: 600;
     color: var(--very-dark-blue);
@@ -43,6 +43,7 @@ body {
     width: 35em;
     text-align: center;
     font-weight: 200;
+    margin-top: 1em;;
     margin-bottom: 2em;
     color: var(--grayish-blue)
 }
