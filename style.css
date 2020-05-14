@@ -33,7 +33,7 @@ body {
     color: var(--grayish-blue)
 }
 
-.header div {
+.header .powered {
     margin-top: 0px;
     font-weight: 600;
     color: var(--very-dark-blue);
